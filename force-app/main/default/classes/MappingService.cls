@@ -7,7 +7,7 @@ public with sharing class MappingService {
     }
 
     public String getRecordTypeName(String countryCode, String industry) {
-        RecordTypeMapping__c mapping = this.customSettings.getRecordTypeMapping(countryCode, industry);
+        RecordTypeMappingCmdt__mdt mapping = this.customSettings.getRecordTypeMapping(countryCode, industry);
         if (mapping != null) {
             return mapping.RecordTypeName__c;
         } else {
